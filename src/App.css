@@ -1,0 +1,241 @@
+
+@import "tailwindcss";
+
+
+html, body {
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    scroll-behavior: smooth;
+}
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+.homepage_bg {
+    background: url('../src/assets/Images/bghome.svg')
+}
+
+/* https://10015.io/tools/css-loader-generator */
+.spinner {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 9px solid #f1f2ff;
+    animation: spinner-bulqg1 0.8s infinite linear alternate,
+      spinner-oaa3wk 1.6s infinite linear;
+}
+
+@keyframes spinner-bulqg1 {
+0% {
+    clip-path: polygon(50% 50%, 0 0, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%);
+}
+
+12.5% {
+    clip-path: polygon(
+    50% 50%,
+    0 0,
+    50% 0%,
+    100% 0%,
+    100% 0%,
+    100% 0%,
+    100% 0%
+    );
+}
+
+25% {
+    clip-path: polygon(
+    50% 50%,
+    0 0,
+    50% 0%,
+    100% 0%,
+    100% 100%,
+    100% 100%,
+    100% 100%
+    );
+}
+
+50% {
+    clip-path: polygon(
+    50% 50%,
+    0 0,
+    50% 0%,
+    100% 0%,
+    100% 100%,
+    50% 100%,
+    0% 100%
+    );
+}
+
+62.5% {
+    clip-path: polygon(
+    50% 50%,
+    100% 0,
+    100% 0%,
+    100% 0%,
+    100% 100%,
+    50% 100%,
+    0% 100%
+    );
+}
+
+75% {
+    clip-path: polygon(
+    50% 50%,
+    100% 100%,
+    100% 100%,
+    100% 100%,
+    100% 100%,
+    50% 100%,
+    0% 100%
+    );
+}
+
+100% {
+    clip-path: polygon(
+    50% 50%,
+    50% 100%,
+    50% 100%,
+    50% 100%,
+    50% 100%,
+    50% 100%,
+    0% 100%
+    );
+}
+}
+
+@keyframes spinner-oaa3wk {
+0% {
+    transform: scaleY(1) rotate(0deg);
+}
+
+49.99% {
+    transform: scaleY(1) rotate(135deg);
+}
+
+50% {
+    transform: scaleY(-1) rotate(0deg);
+}
+
+100% {
+    transform: scaleY(-1) rotate(-135deg);
+}
+}
+
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #afb2bf;
+  }
+  
+  
+
+.codeblock1, .codeblock2 {
+    border-radius: 100%;
+    filter: blur(34px);
+    height: 257.05px;
+    left: calc(50% - 263.005px);
+    opacity: .2;
+    top: calc(50% - 175.995px);
+    transform: matrix(1, 0, -.03, 1, 0, 0);
+    width: 372.95px;
+}
+
+.codeblock1 {
+    background: linear-gradient(123.77deg,#8a2be2 -6.46%,orange 59.04%,#f8f8ff 124.53%);
+}
+
+.codeblock2 {
+    background: linear-gradient(118.19deg,#1fa2ff -3.62%,#12d8fa 50.44%,#a6ffcb 104.51%);
+}
+
+.code-border {
+    background: linear-gradient(111.93deg,rgba(14,26,45,.24) -1.4%,rgba(17,30,50,.38) 104.96%);
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right bottom,#ffffff38,#ffffff00);
+}
+
+
+.glass-bg {
+    backdrop-filter: blur(9px) saturate(200%);
+    -webkit-backdrop-filter: blur(9px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.84);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+  
+    background-color: #111927;
+  }
+
+
+
+
+/* .lable-style {
+    font-size: 14px;
+    color: #F1F2FF; 
+}
+  
+.form-style {
+    border-radius: 0.5rem; 
+    background-color: #2C333F; 
+    padding: 0.75rem; 
+    font-size: 16px;
+    line-height: 1.5rem; 
+    color: #F1F2FF; 
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.5); 
+    
+}
+  
+.form-style::placeholder {
+    color: #6E727F; 
+}
+  
+.form-style:focus {
+    outline: none;
+} */
+
+
+
+
+
+
+
+/* .codeblock1, .codeblock2 {
+@apply rounded-full filter-[blur(34px)] h-[257.05px] left-[calc(50%-263.005px)] opacity-20 top-[calc(50%-175.995px)] transform-[matrix(1,0,-.03,1,0,0)] w-[372.95px];
+}
+  
+.codeblock1 {
+@apply bg-[linear-gradient(123.77deg,#8a2be2_-6.46%,orange_59.04%,#f8f8ff_124.53%)];
+}
+  
+.codeblock2 {
+@apply bg-[linear-gradient(118.19deg,#1fa2ff_-3.62%,#12d8fa_50.44%,#a6ffcb_104.51%)];
+}
+  
+.code-border {
+@apply bg-[linear-gradient(111.93deg,rgba(14,26,45,0.24)_-1.4%,rgba(17,30,50,0.38)_104.96%)] border-2 border-solid border-image-slice-1 border-image-source-linear-gradient(to right bottom,rgba(255,255,255,0.22),rgba(255,255,255,0));
+} */
+
+
+/* @layer components {
+    .lable-style {
+        @apply text-[14px] text-richblack-5;
+    }
+          
+    .form-style {
+        @apply rounded-lg bg-richblack-700 p-3 text-[16px] leading-[24px] text-richblack-5 shadow-[0_1px_0_0] shadow-[rgba(255,255,255,0.5)] outline-none;
+    }
+          
+    .form-style::placeholder {
+        @apply text-richblack-400
+    }
+          
+    .form-style:focus {
+        @apply outline-none;
+    }
+} */
+
