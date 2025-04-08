@@ -21,7 +21,7 @@ The platform is built using the **MERN stack**, which includes ReactJS, NodeJS, 
         <a href="https://github.com/aditya-mishra-CSE" spellcheck="false">
           <img src="https://res.cloudinary.com/dcf4gr9lq/image/upload/v1744098361/StudyNotion/wxuvmgbsxu7bwx3qkneb.jpg" width="120px;" alt="AdityaMishra" style="border-radius: 5px;"/>
           <br />
-          <b>Vivek Panchal</b>
+          <b>Aditya Mishra</b>
         </a>
         <br />
       </td></table>
